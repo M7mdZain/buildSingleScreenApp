@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BuildSingleScreenApp_FruitShop</string>
+    <string name="telephone">+2012345678</string>
+    <string name="email">shop@fruitica.com</string>
+    <string name="contact_us">Contact us</string>
+    <string name="address">329A Oroba st.</string>
+</resources>

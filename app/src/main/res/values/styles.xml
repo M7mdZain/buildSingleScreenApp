@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="contactItem" parent="@android:style/Widget">
+        <item name="android:layout_marginStart">@dimen/margin_24</item>
+        <item name="android:layout_marginLeft">@dimen/margin_24</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="appleIcon" parent="@android:style/Widget">
+        <item name="android:layout_width">@dimen/margin_16</item>
+        <item name="android:layout_height">@dimen/margin_16</item>
+        <item name="android:layout_marginEnd">@dimen/margin_16</item>
+        <item name="android:layout_marginRight">@dimen/margin_8</item>
+        <item name="android:layout_marginBottom">@dimen/margin_8</item>
+    </style>
+
+    <style name="contactIcon" parent="@android:style/Widget">
+        <item name="android:layout_width">@dimen/margin_16</item>
+        <item name="android:layout_height">@dimen/margin_16</item>
+        <item name="android:layout_marginEnd">@dimen/margin_4</item>
+        <item name="android:layout_marginRight">@dimen/margin_4</item>
+        <item name="android:layout_marginBottom">@dimen/margin_16</item>
+    </style>
+
+</resources>

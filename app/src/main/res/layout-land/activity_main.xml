@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity"
+    tools:ignore="Overdraw">
+
+    <RelativeLayout
+        android:id="@+id/rlImagePart"
+        style="@style/wrap_content"
+        android:layout_centerVertical="true">
+
+
+        <ImageView
+            android:id="@+id/ivBackgroud"
+            style="@style/wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/margin_24"
+            android:layout_marginLeft="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_16"
+            android:contentDescription="@null"
+            android:src="@drawable/background" />
+
+        <ImageView
+            android:id="@+id/ivBusinessName"
+            android:layout_width="@dimen/business_name_width"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_24"
+            android:contentDescription="@null"
+            android:src="@drawable/fruitica" />
+
+        <ImageView
+            android:id="@+id/iv_glad_msg"
+            android:layout_width="@dimen/glad_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivBackgroud"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:src="@drawable/glad" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/rlImagePart"
+        android:layout_toRightOf="@+id/rlImagePart"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvContactUs"
+            style="@style/wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_marginBottom="@dimen/margin_24"
+            android:text="@string/contact_us"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/textColor"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/llTelephone"
+            style="@style/contactItem">
+
+            <ImageView
+                style="@style/appleIcon"
+                android:contentDescription="@null"
+                android:src="@drawable/icon" />
+
+            <ImageView
+                style="@style/contactIcon"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_local_phone_black_24dp" />
+
+            <TextView
+                style="@style/wrap_content"
+                android:text="@string/telephone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/llEmail"
+            style="@style/contactItem">
+
+            <ImageView
+                style="@style/appleIcon"
+                android:contentDescription="@null"
+                android:src="@drawable/icon" />
+
+            <ImageView
+                style="@style/contactIcon"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_email_black_24dp" />
+
+            <TextView
+                style="@style/wrap_content"
+                android:text="@string/email" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAddress"
+            style="@style/contactItem">
+
+            <ImageView
+                style="@style/appleIcon"
+                android:contentDescription="@null"
+                android:src="@drawable/icon" />
+
+            <ImageView
+                style="@style/contactIcon"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_drive_eta_black_24dp" />
+
+            <TextView
+                style="@style/wrap_content"
+                android:text="@string/address" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
